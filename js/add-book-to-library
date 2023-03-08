@@ -1,0 +1,25 @@
+function addBookToLibrary(e) {
+  e.preventDefault();
+  let book = createBook();
+  myLibrary.push(book);
+
+  bookForm.style.display = 'none';
+  newBookButton.style.display = 'block';
+  addBookButton.style.display = 'none';
+  clearInputs();
+
+  displayLibrary();
+}
+
+function createBook() {
+  return new Book(
+    document.querySelector('.title').value,
+    document.querySelector('.author').value,
+    document.querySelector('.pages').value,
+    document.querySelector('.status').value
+  );
+}
+
+function clearInputs() {
+  inputs.forEach((input) => (input.value = ''));
+}
