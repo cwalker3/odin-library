@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #3e4345;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+table {
+  background-color: #a1d0ea;
+}
+
+th {
+  width: 150px;
+}
+
+input {
+  width: 150px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
 
 .book-form {
   display: none;
@@ -13,6 +37,4 @@
   display: none;
 }
 
-tr {
-  border: 1px solid black;
-}
+

@@ -52,6 +52,7 @@ function changeStatus(e) {
   let status = e.target.parentNode.children[3];
   status.textContent = '';
   status.appendChild(createStatusInput(index));
+  status.firstChild.focus();
 }
 
 function createStatusInput(index) {
